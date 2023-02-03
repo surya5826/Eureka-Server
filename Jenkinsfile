@@ -7,3 +7,5 @@ node {
         sh 'docker build -t server1:latest -f Dockerfile .'
         sh 'docker image ls'
       }
+      }
+}
