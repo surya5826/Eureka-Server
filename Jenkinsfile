@@ -10,3 +10,5 @@ pipeline {
         sh 'docker build -t eureka:latest -f Dockerfile .'
         sh 'docker image ls'
       }
+        }
+}
