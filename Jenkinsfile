@@ -9,7 +9,7 @@ stage("Docker build"){
  sh 'docker build -t eureka:latest .'
 sh 'docker images'
 stage("Deploy"){
- sh 'docker rm -f eureka-server||true'
+ sh 'docker rm -f eureka||true'
 sh ' docker run -d -p 8761:8761 --name eurekaserver eureka:latest'
 }
 }
