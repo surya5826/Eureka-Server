@@ -6,6 +6,7 @@ git branch: 'master', url: 'https://github.com/surya5826/Eureka-Server.git'
 
 stage("Docker build"){
   sh 'sudo su'
+  surya
 sh ' docker build -t eureka:latest -f Dockerfile .'
 sh ' docker image ls'
 stage("Deploy"){
